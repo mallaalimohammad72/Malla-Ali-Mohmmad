@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Profile Photo */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid yellow;
+    margin-top: 45px;
+    transition: 0.3s;
+}
+
+.profile-pic:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 20px yellow;
+    margin-top: 80px;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation */
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: yellow;
+    transform: scale(1.1);
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    margin: 80px auto;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+/* Contact Section */
+.social-media a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: yellow;
+    transition: 0.3s;
+}
+
+.social-media a:hover {
+    color: white;
+    text-shadow: 0 0 15px yellow;
+}
+
+/* Chatbox */
+#chatToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: yellow;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 1001;
+    box-shadow: 0 0 15px yellow;
+}
+
+#chatbox {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid yellow;
+    padding: 15px;
+    width: 320px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px yellow;
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s, transform 0.4s;
+}
+
+#chatbox.open {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#chat {
+    height: 250px;
+    overflow-y: auto;
+    border-bottom: 2px solid yellow;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: left;
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Mohammad - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Ali Mohammad" class="profile-pic">
+        <h1>Malla Ali Mohammad</h1>
+        <p>Diploma IT Student | Developer</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to My Website</h2>
+        <p>Find details about my education, projects, and more.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>👋 Hi! I’m Malla Ali Mohammad, an aspiring IT professional, Web Developer, and tech enthusiast from Kashmir. Currently, I’m pursuing a Diploma in IT at GMIU COLLAGE BHAVNAGAR, where I’m continuously honing my skills in web development, software engineering, and digital innovation.</p>
+        <p> 🚀 What I Do </p>
+            I specialize in building interactive websites, software solutions, and AI-based applications. My goal is to create useful, efficient, and user-friendly digital platforms that solve real-world problems.
+        <p> 🌱 My Interests </p>    
+            I’m passionate about learning new technologies, exploring the latest trends in the tech industry, and collaborating with other developers. I’m always looking for opportunities to grow, innovate, and make a positive impact through my work.
+        
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <p>🌟 My Projects & Websites</p>
+            I have developed several websites and applications, each serving a unique purpose: <br><br>
+            
+         <b>   🎮 Mind-Game72</b> – A fun and challenging platform featuring brain-training games. <br><br>
+          <b>  💰 MoneyCount</b> – A smart financial tool for quick and accurate money management. <br><br>
+          <b>☕ ChaiGPT</b> – An AI-powered chatbot designed for engaging and interactive conversations. <br><br>
+          <b>🛒 E-commerce Store </b>– Selling premium Kashmiri Kesar, honey, and dry fruits online. <br><br>
+          <b>🎓 Quiz Software for Schools</b> – A digital quiz platform for educational institutions to conduct interactive tests.
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>You can contact me via email or social media.</p>
+        <form id="feedbackForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="social-media">
+            <a href="https://facebook.com/nalayak baccha" target="_blank" class="facebook">Facebook</a>
+            <a href="https://x.com/ALIMMALLA72" target="_blank" class="twitter">Twitter</a>
+            <a href="https://github.com/mallaalimohammad72" target="_blank" class="github">GitHub</a>
+            <a href="https://instagram.com/kashur_kout72" target="_blank" class="linkedin">Instagram</a>
+        </div>
+    </section>
+
+    <button id="chatToggle">💬 Chat</button>
+    <div id="chatbox">
+        <h3>Chat with Me</h3>
+        <div id="chat"></div>
+        <input type="text" id="chatInput" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
